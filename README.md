@@ -4,6 +4,7 @@ This repository contains my practice code, assignments, and notes while completi
 
 ## Topics Covered
 
+- JavaScript 
 - TypeScript
 - PostgreSQL
 - Node.js & Express
