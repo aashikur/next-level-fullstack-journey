@@ -6,7 +6,7 @@ const cartItems = [
     { id: "p-003", name: "Aarong Kurta", price: 2200, quantity: 1 },
 ];
 
-// const subTotal = cartItems.reduce((accumulator, item) => {}, 0)
+// const subTotal = cartItems.reduce((accumulator, currentItem) => {}, 0)
 const subtotal = cartItems.reduce((subtotal, product) => {
    console.log(subtotal, product);
     return subtotal + product.price * product.quantity;
