@@ -25,12 +25,31 @@ const posts = [
 //    { id: 103, name: 'Charlie', posts: [ { id: 4, ... } ] }
 // ]
 
+// Todos -> post to duplicate into one User ID
 
-const TotalPost = posts.reduce((table, post ) => {
-    table[post.userId] = post;
+
+const postByUserID = posts.reduce((table, post) => {
+    if(!table[post.userId]) {
+        table[post.userId] = [];
+    }
+
+    table[post.userId].push(post);
     return table;
+
 }, {})
 
 
+// console.log(postByUserID)
 
-console.log(TotalPost)
+const userWithPosts = users.map(user => {
+    return {
+        ...user,
+        posts: [...postByUserID[user.id]] ||  []
+    }
+})
+
+console.log(JSON.stringify(userWithPosts, null , 1));
+// console.log(...postByUserID[102])
+
+
+
