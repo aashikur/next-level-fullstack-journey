@@ -1,3 +1,4 @@
+// Array implementation
 // stack - LIFO -> Last IN first OUT
 // lets with array
 // push() pop() peek()
