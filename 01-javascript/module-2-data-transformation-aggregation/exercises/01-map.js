@@ -1,3 +1,6 @@
+// this lesson give what we can do with maps and some methods
+// map
+
 // general object access
 const obj = {
     nextLevel : {courseId : "level2"},
@@ -13,7 +16,7 @@ const course1 = {name : "Programming Hero"}
 const course2 = {name : "Next Level Development"}
 
 // Map Access
-  
+
 const map = new Map();
 map.set(course1, {courseId : "level1"})
 map.set(course2, {courseId : "level2"})
@@ -27,3 +30,12 @@ map.set(course2, {courseId : "level2"})
 
 
 // console.log(map)
+// console.log(map.size);
+// map.delete(course1);
+// console.log(map);
+
+// console.log(map.has(course1))
+
+// console.log(map.entries());
+
+const courses = [["programming ", "level1"], ["nextLevel", "level2 "]]

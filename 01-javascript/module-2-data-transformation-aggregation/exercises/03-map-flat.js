@@ -1,4 +1,6 @@
 // sort
+// localeCompare
+//flat() - flat an array
 
 const number = [30, 399, 34, 66, 2, 5]
 
