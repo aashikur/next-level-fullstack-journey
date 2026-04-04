@@ -42,3 +42,7 @@ const aggregateLikes = (likes) => {
 }
 
 console.log(aggregateLikes(likes))
+
+
+// const aggregateLikes2 = (likes) => likes.reduce((acc, { postId }) => ((acc[postId] = (acc[postId] ?? 0) + 1), acc), {});
+// const aggregateLikes3 = (likes) => likes.reduce((acc, { postId }) => ((acc[postId] = (acc[postId] ?? 0) + 1), acc), {})
